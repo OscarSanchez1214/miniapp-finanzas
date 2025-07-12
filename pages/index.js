@@ -1,9 +1,8 @@
 import dynamic from "next/dynamic";
 
-// Importa dinámicamente el componente solo en cliente (evita error en build)
-const VerifyBlock = dynamic(() => import("../components/VerifyBlock").then(mod => mod.VerifyBlock), {
-  ssr: false, // Desactiva server-side rendering para este componente
-});
+const VerifyBlock = dynamic(() =>
+  import("../components/VerifyBlock").then((mod) => mod.VerifyBlock), { ssr: false }
+);
 
 export default function Home() {
   return (
