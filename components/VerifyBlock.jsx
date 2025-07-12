@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 const verifyPayload = {
   action: "vota-por-proyecto",
   signal: "",
+  app_id: "app_439de68878943e5da3db6dc84b7d46d2", // 🔥 importante
   verification_level: VerificationLevel.Orb,
 };
 
